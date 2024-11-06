@@ -1,0 +1,106 @@
+@charset "utf-8";
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.morningnight {
+  width: 100%;
+  object-fit: cover;
+  transform: rotate(90deg);
+  
+}
+div{
+  animation: daily-move 12s infinite linear;
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.walking {
+  width: 160px;
+  height: 20vh;
+  object-fit: cover;
+  animation: cat-move 12s infinite linear;
+  position: absolute;
+  top: 68vh;
+}
+
+.sleeping {
+  width: 200px;
+  height: 15vh;
+  object-fit: cover;
+  position: absolute;
+  left: 30%;
+  top: 85vh;
+  transform: rotate(180deg);
+}
+
+.star {
+  width: 160px;
+  height: 160px;
+  animation: star-move 12s infinite linear;
+  position: absolute;
+  top: 120vh;
+  left: 30%;
+}
+
+.sun{
+  width: 160px;
+  height: 160px;
+  animation: sun-move 12s infinite linear;
+  position: absolute;
+  top: 160px;
+  right: 30%;
+}
+
+@keyframes daily-move {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes star-move {
+  25% {
+    transform: scale(.8);
+    
+  }
+  50% {
+    transform: scale(1);
+    
+  }
+  75% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sun-move {
+  25% {
+    transform: scale(.8);
+    
+  }
+  50% {
+    transform: scale(1);
+    
+  }
+  75% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cat-move {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
